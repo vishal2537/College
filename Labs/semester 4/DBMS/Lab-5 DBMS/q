@@ -1,0 +1,62 @@
+use school;
+
+create view enrolledStudents as select cname,enrolled.snum 
+from enrolled,student where enrolled.snum=student.snum;
+
+-- First Question
+
+
+
+select room,class.name,count(enrolledStudents.snum) as noOfStudentsEnrolled
+from class left join (enrolledStudents) on enrolledStudents.cname=class.name where
+room="20 AVW" group by class.name having count(enrolledStudents.snum)>=5;
+
+-- Second Question
+select room, count(name) as NoOfCourses from class group by room;
+
+-- Third Question
+select faculty.fid,fname,count(name) as noOfCourses 
+from faculty left join class on faculty.fid=class.fid 
+group by faculty.fid;
+
+-- Fourth Question
+select room,class.name,count(enrolledStudents.snum) as noOfStudentsEnrolled 
+from class left join (enrolledStudents) on enrolledStudents.cname=class.name 
+group by class.name;
+
+-- Fifth Question
+select * from faculty where faculty.deptid=20 and faculty.fid in (select fid from class where room="R128");
+
+-- Sixth Question
+select major,max(age) as MaxAge from student group by major;
+
+-- Seventh Question
+select distinct sname as studentName from student where sname like "%son%";
+select distinct fname as facultyName from faculty where fname like "%son%";
+
+
+
+----------------------------------
+
+create Database 
+
+--8
+SELECT supervisor FROM employees WHERE person = 'Ravi';
+
+
+--9
+SELECT supervisor FROM employees WHERE person = 
+  (SELECT supervisor FROM employees WHERE person = 'Ravi');
+
+
+--10
+WITH RECURSIVE supervisors (person, supervisor) AS (
+  SELECT person, supervisor
+  FROM employees
+  WHERE person = 'Ravi'
+  UNION ALL
+  SELECT e.person, e.supervisor
+  FROM employees e
+  JOIN supervisors s ON e.person = s.supervisor
+)
+SELECT * FROM supervisors;

@@ -1,0 +1,65 @@
+1-->
+select sname, age from student;
+
+2-->
+select snum , sname , level ,age from student where age > 18;
+
+3-->
+select snum from enrolled where cname = 'Database Systems';
+
+4-->
+SELECT sname FROM student WHERE snum IN (SELECT snum FROM enrolled WHERE cname = 'Data-base Systems');
+SELECT sname FROM student WHERE snum IN (SELECT snum FROM enrolled WHERE cname = 'Database Systems');
+
+5-->
+SELECT fname FROM faculty WHERE deptid = '20';
+
+
+lab2 
+
+
+1-->
+select name from class where room = "R128";
+
+2-->
+select fid , fname, deptid from faculty where fid in(select fid from class where room = 'R128');
+
+3-->
+SELECT fname FROM Faculty WHERE fid IN(SELECT fid FROM Class WHERE name ='Data Structures');
+
+4-->
+SELECT cname FROM Enrolled WHERE snum IN(SELECT snum FROM Student WHERE sname = 'Joseph Thompson');
+
+5-->
+SELECT sname FROM Student WHERE snum IN (SELECT snum FROM Enrolled);
+
+
+
+
+
+select sname from student where snum not in(select snum from enrolled);
+
+
+
+
+
+
+
+
+
+
+create table xyz select snum from enrolled where cname = 'Database Systems';
+
+
+
+
+
+
+
+
+//how to compare two columns with same name in two different table  in database
+
+SELECT *
+FROM table1
+JOIN table2
+ON table1.column_name = table2.column_name;
