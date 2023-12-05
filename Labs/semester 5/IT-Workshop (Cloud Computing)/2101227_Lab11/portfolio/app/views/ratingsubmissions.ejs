@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RatingSubmissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="my-contact-form-submissions">
+        <div class="container">
+            <h1 class="sub-title btnn">Ratings</h1>
+            <div class="my-skills-list">
+                <% recommendations.forEach(submission=> { %>
+                    <div>
+                        <h3><strong>Name:</strong>
+                            <%= submission.name %>
+                        </h3>
+                        <h3><strong>Email:</strong>
+                            <%= submission.email %>
+                        </h3>
+                        <h3>
+                            <p>
+                                <strong>Rating:</strong>
+                                <%= submission.rate %>
+                            </p>
+                        </h3>
+                        <!-- <p>
+                            <strong>Message:</strong>
+                            <%= submission.message %>
+                        </p> -->
+                        <a href="/deleteratings/<%= submission.id %>">Delete</a>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+mysql -h contactform.cfmfrfg6ylcp.ap-south-1.rds.amazonaws.com -u admin -p
+
+create database  recommendation;
+create database  ratings;   

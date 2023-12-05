@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recommendation Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/auth-style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form method="post" action="/recomsubmit" class="loginForm">
+            <div class="form-icon">
+                <span><b>Recommendation's!</b></span>
+            </div>
+    
+            <div>
+                <div class="form-group">
+                    <input type="text" id="skills" class="form-control item" name="skills"  placeholder="Skill" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="titles" class="form-control item" name="titles" placeholder="Title" >
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" class="form-control item" name="message" rows="6" placeholder="Recommendation" required></textarea>
+                </div>
+
+                <div class="form-group">    
+                    <button type="submit" class="btn create-account btn-dark">Submit</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

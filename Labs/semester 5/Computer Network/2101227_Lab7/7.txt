@@ -1,0 +1,83 @@
+-------------------------------------------  Q 1   ----------------------------------------------------------------
+Different Protocols:
+X-L2_switch:Ethernet
+L2_switch-Router_1:Ethernet
+Router_1-Router_2:Point_to_Point
+Router_2-Access_point:Ethernet
+Access_point-Y:IEEE802.11
+
+
+
+
+-------------------------------------------  Q 2   ----------------------------------------------------------------
+For Node X:
+Physical Address: AF1D000000501
+Logical Address : 11.2.1.2
+
+For Node Y:
+Physical Address: AF1D00000601
+Logical Address : 11.3.1.1
+
+
+
+
+-------------------------------------------  Q 3   ----------------------------------------------------------------
+For X --> Y:
+a. Ratio of packets received to the packets transmitted=19110/19117
+b. Ratio of packets that are received in error to the packets transmitted=5/19117
+c. Ratio of packets that have collided to the packets transmitted=2/19117
+d. Total number of packets lost=7
+e. Throughput in Mbps=0.589382
+f.  MAC address        TYPE         OutPort 
+    AF1D00000102      Dynamic        1 
+    AF1D00000502      Dynamic        2
+
+
+For Y --> X:
+a. Ratio of packets received to the packets transmitted=7949/7960
+b. Ratio of packets that are received in error to the packets transmitted=7/7960
+c. Ratio of packets that have collided to the packets transmitted=4/7960
+d. Total number of packets lost=11
+e. Throughput in Mbps=0.583498
+f.  MAC address        TYPE         OutPort 
+    AF1D000000501      Dynamic        1 
+    AF1D000000101      Dynamic        2
+
+
+
+-------------------------------------------  Q 4   ----------------------------------------------------------------
+For X --> Y:
+a. Ratio of packets received to the packets transmitted=7706/7712
+b. Ratio of packets that are received in error to the packets transmitted=4/7713
+c. Ratio of packets that have collided to the packets transmitted=2/7713
+d. Total number of packets lost=6
+e. Throughput in Mbps=0.569895
+f.  MAC address        TYPE         OutPort 
+    AF1D000000501      Dynamic        1 
+    AF1D000000101      Dynamic        2
+
+-------------------------------------------  Q 5   ----------------------------------------------------------------
+For X --> Y:
+a. Ratio of packets received to the packets transmitted=5007/5011
+b. Ratio of packets that are received in error to the packets transmitted=3/5011
+c. Ratio of packets that have collided to the packets transmitted=1/5011
+d. Total number of packets lost=4
+e. Throughput in Mbps=0.584000
+f.  MAC address        TYPE         OutPort 
+    AF1D000000501      Dynamic        1 
+    AF1D000000101      Dynamic        2
+
+
+
+-------------------------------------------  Q 6   ----------------------------------------------------------------
+Data link layer payload size:
+for X = 1500 bytes
+For Y = 976 bytes
+
+Header size:
+Physical_layer_payload- MAC_layer_payload
+X-L2_switch=26
+L2_switch-Router_1=26
+Router_1-Router_2=0
+Router_2-Access_point=26
+Access_point-Y=40

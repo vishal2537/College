@@ -1,0 +1,19 @@
+{
+  "name": "aws",
+  "version": "1.0.0",
+  "description": "I have developed my portfolio website using HTML, CSS, and JavaScript, ensuring responsiveness with media queries. Through this project, I showcased my skills in front-end web development, creating a visually appealing and user-friendly website that adapts to different devices and screen sizes for an enhanced user experience.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+  }
+}

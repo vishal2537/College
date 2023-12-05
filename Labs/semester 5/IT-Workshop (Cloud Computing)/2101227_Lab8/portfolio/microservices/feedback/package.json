@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-service1",
+  "version": "1.0.0",
+  "description": "Portfolio Service 1",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^3.6.1"
+  }
+}

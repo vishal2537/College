@@ -1,0 +1,97 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n@app.route('/predict', methods=['POST'])\ndef predict():\n    if request.method == 'POST':\n        age = int(request.form['age'])\n        bmi = float(request.form['bmi'])\n        children = int(request.form['children'])\n        gender = int(request.form['gender'])\n        smoker = int(request.form['smoker'])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def predict():\n    if request.method == 'POST':\n        age = int(request.form['age'])\n        bmi = float(request.form['bmi'])\n        children = int(request.form['children'])\n        gender = int(request.form['gender'])\n        smoker = int(request.form['smoker'])\n        region = request.form['region']\n        r1=0\n        r2=0",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n# model_path = os.path.abspath('./model/premium_prediction_model.pkl')\n# model_load = joblib.load(model_path)\nmodel_load = joblib.load('./model/premium_prediction_model.pkl')\n# model_load = joblib.load(\"C:\\\\Users\\\\Lenovo\\\\Desktop\\\\college1\\\\Labs\\\\semester 5\\\\Machine Learning\\\\mp\\\\model\\\\premium_prediction_model.pkl\")\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/predict', methods=['POST'])\ndef predict():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "model_load",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "model_load = joblib.load('./model/premium_prediction_model.pkl')\n# model_load = joblib.load(\"C:\\\\Users\\\\Lenovo\\\\Desktop\\\\college1\\\\Labs\\\\semester 5\\\\Machine Learning\\\\mp\\\\model\\\\premium_prediction_model.pkl\")\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/predict', methods=['POST'])\ndef predict():\n    if request.method == 'POST':\n        age = int(request.form['age'])\n        bmi = float(request.form['bmi'])",
+        "detail": "app",
+        "documentation": {}
+    }
+]

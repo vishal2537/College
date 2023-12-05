@@ -1,0 +1,385 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "sklearn.cluster",
+        "description": "sklearn.cluster",
+        "isExtraImport": true,
+        "detail": "sklearn.cluster",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "SparkContext",
+        "importPath": "pyspark",
+        "description": "pyspark",
+        "isExtraImport": true,
+        "detail": "pyspark",
+        "documentation": {}
+    },
+    {
+        "label": "KMeans",
+        "importPath": "pyspark.mllib.clustering",
+        "description": "pyspark.mllib.clustering",
+        "isExtraImport": true,
+        "detail": "pyspark.mllib.clustering",
+        "documentation": {}
+    },
+    {
+        "label": "SparkSession",
+        "importPath": "pyspark.sql",
+        "description": "pyspark.sql",
+        "isExtraImport": true,
+        "detail": "pyspark.sql",
+        "documentation": {}
+    },
+    {
+        "label": "SparkSession",
+        "importPath": "pyspark.sql",
+        "description": "pyspark.sql",
+        "isExtraImport": true,
+        "detail": "pyspark.sql",
+        "documentation": {}
+    },
+    {
+        "label": "SparkSession",
+        "importPath": "pyspark.sql",
+        "description": "pyspark.sql",
+        "isExtraImport": true,
+        "detail": "pyspark.sql",
+        "documentation": {}
+    },
+    {
+        "label": "col",
+        "importPath": "pyspark.sql.functions",
+        "description": "pyspark.sql.functions",
+        "isExtraImport": true,
+        "detail": "pyspark.sql.functions",
+        "documentation": {}
+    },
+    {
+        "label": "col",
+        "importPath": "pyspark.sql.functions",
+        "description": "pyspark.sql.functions",
+        "isExtraImport": true,
+        "detail": "pyspark.sql.functions",
+        "documentation": {}
+    },
+    {
+        "label": "col",
+        "importPath": "pyspark.sql.functions",
+        "description": "pyspark.sql.functions",
+        "isExtraImport": true,
+        "detail": "pyspark.sql.functions",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_ucirepo",
+        "importPath": "ucimlrepo",
+        "description": "ucimlrepo",
+        "isExtraImport": true,
+        "detail": "ucimlrepo",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_ucirepo",
+        "importPath": "ucimlrepo",
+        "description": "ucimlrepo",
+        "isExtraImport": true,
+        "detail": "ucimlrepo",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_ucirepo",
+        "importPath": "ucimlrepo",
+        "description": "ucimlrepo",
+        "isExtraImport": true,
+        "detail": "ucimlrepo",
+        "documentation": {}
+    },
+    {
+        "label": "filename",
+        "kind": 5,
+        "importPath": "Q1_kmean_clustering",
+        "description": "Q1_kmean_clustering",
+        "peekOfCode": "filename = 'adult.data'\ndata = pd.read_csv(filename, header=None)\nX = data[[0, 2, 11]].copy()\nkmeans = KMeans(n_clusters=3 ,max_iter=500, random_state=10).fit(X)\nprint(\"Cluster Centers :\", kmeans.cluster_centers_)\nprint(\"Sum Squared Error :\",kmeans.inertia_)\n# 0 --> age\n# 2 --> work class\n# 11 --> capital-loss",
+        "detail": "Q1_kmean_clustering",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Q1_kmean_clustering",
+        "description": "Q1_kmean_clustering",
+        "peekOfCode": "data = pd.read_csv(filename, header=None)\nX = data[[0, 2, 11]].copy()\nkmeans = KMeans(n_clusters=3 ,max_iter=500, random_state=10).fit(X)\nprint(\"Cluster Centers :\", kmeans.cluster_centers_)\nprint(\"Sum Squared Error :\",kmeans.inertia_)\n# 0 --> age\n# 2 --> work class\n# 11 --> capital-loss",
+        "detail": "Q1_kmean_clustering",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Q1_kmean_clustering",
+        "description": "Q1_kmean_clustering",
+        "peekOfCode": "X = data[[0, 2, 11]].copy()\nkmeans = KMeans(n_clusters=3 ,max_iter=500, random_state=10).fit(X)\nprint(\"Cluster Centers :\", kmeans.cluster_centers_)\nprint(\"Sum Squared Error :\",kmeans.inertia_)\n# 0 --> age\n# 2 --> work class\n# 11 --> capital-loss",
+        "detail": "Q1_kmean_clustering",
+        "documentation": {}
+    },
+    {
+        "label": "kmeans",
+        "kind": 5,
+        "importPath": "Q1_kmean_clustering",
+        "description": "Q1_kmean_clustering",
+        "peekOfCode": "kmeans = KMeans(n_clusters=3 ,max_iter=500, random_state=10).fit(X)\nprint(\"Cluster Centers :\", kmeans.cluster_centers_)\nprint(\"Sum Squared Error :\",kmeans.inertia_)\n# 0 --> age\n# 2 --> work class\n# 11 --> capital-loss",
+        "detail": "Q1_kmean_clustering",
+        "documentation": {}
+    },
+    {
+        "label": "cost",
+        "kind": 2,
+        "importPath": "Q2_spark_clustering",
+        "description": "Q2_spark_clustering",
+        "peekOfCode": "def cost(point):\n    center = clusters.centers[clusters.predict(point)]\n    return sqrt(sum([x**2 for x in (point - center)]))\nif __name__ == \"__main__\":\n    spark = SparkContext(appName=\"KMeansExample\")\n    data = spark.textFile(\"file:///home/devil/it-workshop/2101227_Lab10/adultdata.txt\")\n    dataset = data.map(lambda line: np.array([x for x in line.split(', ')])[np.array([0,2,11])].astype(float))\n    clusters = KMeans.train(dataset, 3, maxIterations=50, initializationMode=\"random\")\n    SSE = dataset.map(lambda point: cost(point)).reduce(lambda x, y: x + y)\n    print(\"\\nCenters:\",clusters.centers,\"\\nSSE=\",SSE,\"\\n\",file=sys.stdout)",
+        "detail": "Q2_spark_clustering",
+        "documentation": {}
+    },
+    {
+        "label": "spark",
+        "kind": 5,
+        "importPath": "Q3_1",
+        "description": "Q3_1",
+        "peekOfCode": "spark = SparkSession.builder.appName(\"CountryAnalysis\").getOrCreate()\nfrom ucimlrepo import fetch_ucirepo\nadult = fetch_ucirepo(id=2)\ndata = adult.data.features\ndf = spark.createDataFrame(data)\nusa = df.filter(df[\"native-country\"] != \"United-States\")\nadults = usa.filter(df[\"age\"] > 18)\ncount_country = adults.groupBy(\"native-country\").agg({\"age\": \"count\"})\nmax_count_row = count_country.orderBy(col(\"count(age)\").desc()).first()\nprint(\"------------------------------------------------------------------------------------------------\")",
+        "detail": "Q3_1",
+        "documentation": {}
+    },
+    {
+        "label": "adult",
+        "kind": 5,
+        "importPath": "Q3_1",
+        "description": "Q3_1",
+        "peekOfCode": "adult = fetch_ucirepo(id=2)\ndata = adult.data.features\ndf = spark.createDataFrame(data)\nusa = df.filter(df[\"native-country\"] != \"United-States\")\nadults = usa.filter(df[\"age\"] > 18)\ncount_country = adults.groupBy(\"native-country\").agg({\"age\": \"count\"})\nmax_count_row = count_country.orderBy(col(\"count(age)\").desc()).first()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nCountry with the highest number of adults (excluding USA):\", max_count_row[\"native-country\"], \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")",
+        "detail": "Q3_1",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Q3_1",
+        "description": "Q3_1",
+        "peekOfCode": "data = adult.data.features\ndf = spark.createDataFrame(data)\nusa = df.filter(df[\"native-country\"] != \"United-States\")\nadults = usa.filter(df[\"age\"] > 18)\ncount_country = adults.groupBy(\"native-country\").agg({\"age\": \"count\"})\nmax_count_row = count_country.orderBy(col(\"count(age)\").desc()).first()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nCountry with the highest number of adults (excluding USA):\", max_count_row[\"native-country\"], \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_1",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Q3_1",
+        "description": "Q3_1",
+        "peekOfCode": "df = spark.createDataFrame(data)\nusa = df.filter(df[\"native-country\"] != \"United-States\")\nadults = usa.filter(df[\"age\"] > 18)\ncount_country = adults.groupBy(\"native-country\").agg({\"age\": \"count\"})\nmax_count_row = count_country.orderBy(col(\"count(age)\").desc()).first()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nCountry with the highest number of adults (excluding USA):\", max_count_row[\"native-country\"], \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_1",
+        "documentation": {}
+    },
+    {
+        "label": "usa",
+        "kind": 5,
+        "importPath": "Q3_1",
+        "description": "Q3_1",
+        "peekOfCode": "usa = df.filter(df[\"native-country\"] != \"United-States\")\nadults = usa.filter(df[\"age\"] > 18)\ncount_country = adults.groupBy(\"native-country\").agg({\"age\": \"count\"})\nmax_count_row = count_country.orderBy(col(\"count(age)\").desc()).first()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nCountry with the highest number of adults (excluding USA):\", max_count_row[\"native-country\"], \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_1",
+        "documentation": {}
+    },
+    {
+        "label": "adults",
+        "kind": 5,
+        "importPath": "Q3_1",
+        "description": "Q3_1",
+        "peekOfCode": "adults = usa.filter(df[\"age\"] > 18)\ncount_country = adults.groupBy(\"native-country\").agg({\"age\": \"count\"})\nmax_count_row = count_country.orderBy(col(\"count(age)\").desc()).first()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nCountry with the highest number of adults (excluding USA):\", max_count_row[\"native-country\"], \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_1",
+        "documentation": {}
+    },
+    {
+        "label": "count_country",
+        "kind": 5,
+        "importPath": "Q3_1",
+        "description": "Q3_1",
+        "peekOfCode": "count_country = adults.groupBy(\"native-country\").agg({\"age\": \"count\"})\nmax_count_row = count_country.orderBy(col(\"count(age)\").desc()).first()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nCountry with the highest number of adults (excluding USA):\", max_count_row[\"native-country\"], \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_1",
+        "documentation": {}
+    },
+    {
+        "label": "max_count_row",
+        "kind": 5,
+        "importPath": "Q3_1",
+        "description": "Q3_1",
+        "peekOfCode": "max_count_row = count_country.orderBy(col(\"count(age)\").desc()).first()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nCountry with the highest number of adults (excluding USA):\", max_count_row[\"native-country\"], \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_1",
+        "documentation": {}
+    },
+    {
+        "label": "spark",
+        "kind": 5,
+        "importPath": "Q3_2",
+        "description": "Q3_2",
+        "peekOfCode": "spark = SparkSession.builder.appName(\"CountryAnalysis\").getOrCreate()\nfrom ucimlrepo import fetch_ucirepo\nadult = fetch_ucirepo(id=2)\ndata = adult.data.features\ndf = spark.createDataFrame(data)\natleast_masters = df.filter((df[\"education\"] == \"Masters\") | (df[\"education\"] == \"Doctorate\"))\ntech_support = atleast_masters.filter(atleast_masters[\"occupation\"] == \"Tech-support\")\ncount = tech_support.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of people with at least a Masters or Doctorate degree working in Tech-support:\", count, \"\\n\")",
+        "detail": "Q3_2",
+        "documentation": {}
+    },
+    {
+        "label": "adult",
+        "kind": 5,
+        "importPath": "Q3_2",
+        "description": "Q3_2",
+        "peekOfCode": "adult = fetch_ucirepo(id=2)\ndata = adult.data.features\ndf = spark.createDataFrame(data)\natleast_masters = df.filter((df[\"education\"] == \"Masters\") | (df[\"education\"] == \"Doctorate\"))\ntech_support = atleast_masters.filter(atleast_masters[\"occupation\"] == \"Tech-support\")\ncount = tech_support.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of people with at least a Masters or Doctorate degree working in Tech-support:\", count, \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_2",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Q3_2",
+        "description": "Q3_2",
+        "peekOfCode": "data = adult.data.features\ndf = spark.createDataFrame(data)\natleast_masters = df.filter((df[\"education\"] == \"Masters\") | (df[\"education\"] == \"Doctorate\"))\ntech_support = atleast_masters.filter(atleast_masters[\"occupation\"] == \"Tech-support\")\ncount = tech_support.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of people with at least a Masters or Doctorate degree working in Tech-support:\", count, \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_2",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Q3_2",
+        "description": "Q3_2",
+        "peekOfCode": "df = spark.createDataFrame(data)\natleast_masters = df.filter((df[\"education\"] == \"Masters\") | (df[\"education\"] == \"Doctorate\"))\ntech_support = atleast_masters.filter(atleast_masters[\"occupation\"] == \"Tech-support\")\ncount = tech_support.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of people with at least a Masters or Doctorate degree working in Tech-support:\", count, \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_2",
+        "documentation": {}
+    },
+    {
+        "label": "atleast_masters",
+        "kind": 5,
+        "importPath": "Q3_2",
+        "description": "Q3_2",
+        "peekOfCode": "atleast_masters = df.filter((df[\"education\"] == \"Masters\") | (df[\"education\"] == \"Doctorate\"))\ntech_support = atleast_masters.filter(atleast_masters[\"occupation\"] == \"Tech-support\")\ncount = tech_support.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of people with at least a Masters or Doctorate degree working in Tech-support:\", count, \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_2",
+        "documentation": {}
+    },
+    {
+        "label": "tech_support",
+        "kind": 5,
+        "importPath": "Q3_2",
+        "description": "Q3_2",
+        "peekOfCode": "tech_support = atleast_masters.filter(atleast_masters[\"occupation\"] == \"Tech-support\")\ncount = tech_support.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of people with at least a Masters or Doctorate degree working in Tech-support:\", count, \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_2",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Q3_2",
+        "description": "Q3_2",
+        "peekOfCode": "count = tech_support.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of people with at least a Masters or Doctorate degree working in Tech-support:\", count, \"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_2",
+        "documentation": {}
+    },
+    {
+        "label": "spark",
+        "kind": 5,
+        "importPath": "Q3_3",
+        "description": "Q3_3",
+        "peekOfCode": "spark = SparkSession.builder.appName(\"CountryAnalysis\").getOrCreate()\nfrom ucimlrepo import fetch_ucirepo\nadult = fetch_ucirepo(id=2)\ndata = adult.data.features\ndf = spark.createDataFrame(data)\nunmarried = df.filter((df[\"marital-status\"] == \"Divorced\") | (df[\"marital-status\"] == \"Never-married\"))\nmales = unmarried.filter(unmarried[\"sex\"] == \"Male\")\nlocal_govt = males.filter(males[\"workclass\"] == \"Local-gov\")\ncount = local_govt.count()\nprint(\"------------------------------------------------------------------------------------------------\")",
+        "detail": "Q3_3",
+        "documentation": {}
+    },
+    {
+        "label": "adult",
+        "kind": 5,
+        "importPath": "Q3_3",
+        "description": "Q3_3",
+        "peekOfCode": "adult = fetch_ucirepo(id=2)\ndata = adult.data.features\ndf = spark.createDataFrame(data)\nunmarried = df.filter((df[\"marital-status\"] == \"Divorced\") | (df[\"marital-status\"] == \"Never-married\"))\nmales = unmarried.filter(unmarried[\"sex\"] == \"Male\")\nlocal_govt = males.filter(males[\"workclass\"] == \"Local-gov\")\ncount = local_govt.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of unmarried males working in Local-govt:\", count,\"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")",
+        "detail": "Q3_3",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Q3_3",
+        "description": "Q3_3",
+        "peekOfCode": "data = adult.data.features\ndf = spark.createDataFrame(data)\nunmarried = df.filter((df[\"marital-status\"] == \"Divorced\") | (df[\"marital-status\"] == \"Never-married\"))\nmales = unmarried.filter(unmarried[\"sex\"] == \"Male\")\nlocal_govt = males.filter(males[\"workclass\"] == \"Local-gov\")\ncount = local_govt.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of unmarried males working in Local-govt:\", count,\"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_3",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Q3_3",
+        "description": "Q3_3",
+        "peekOfCode": "df = spark.createDataFrame(data)\nunmarried = df.filter((df[\"marital-status\"] == \"Divorced\") | (df[\"marital-status\"] == \"Never-married\"))\nmales = unmarried.filter(unmarried[\"sex\"] == \"Male\")\nlocal_govt = males.filter(males[\"workclass\"] == \"Local-gov\")\ncount = local_govt.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of unmarried males working in Local-govt:\", count,\"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_3",
+        "documentation": {}
+    },
+    {
+        "label": "unmarried",
+        "kind": 5,
+        "importPath": "Q3_3",
+        "description": "Q3_3",
+        "peekOfCode": "unmarried = df.filter((df[\"marital-status\"] == \"Divorced\") | (df[\"marital-status\"] == \"Never-married\"))\nmales = unmarried.filter(unmarried[\"sex\"] == \"Male\")\nlocal_govt = males.filter(males[\"workclass\"] == \"Local-gov\")\ncount = local_govt.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of unmarried males working in Local-govt:\", count,\"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_3",
+        "documentation": {}
+    },
+    {
+        "label": "males",
+        "kind": 5,
+        "importPath": "Q3_3",
+        "description": "Q3_3",
+        "peekOfCode": "males = unmarried.filter(unmarried[\"sex\"] == \"Male\")\nlocal_govt = males.filter(males[\"workclass\"] == \"Local-gov\")\ncount = local_govt.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of unmarried males working in Local-govt:\", count,\"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_3",
+        "documentation": {}
+    },
+    {
+        "label": "local_govt",
+        "kind": 5,
+        "importPath": "Q3_3",
+        "description": "Q3_3",
+        "peekOfCode": "local_govt = males.filter(males[\"workclass\"] == \"Local-gov\")\ncount = local_govt.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of unmarried males working in Local-govt:\", count,\"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_3",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Q3_3",
+        "description": "Q3_3",
+        "peekOfCode": "count = local_govt.count()\nprint(\"------------------------------------------------------------------------------------------------\")\nprint(\"\\nNumber of unmarried males working in Local-govt:\", count,\"\\n\")\nprint(\"------------------------------------------------------------------------------------------------\")\nspark.stop()",
+        "detail": "Q3_3",
+        "documentation": {}
+    }
+]

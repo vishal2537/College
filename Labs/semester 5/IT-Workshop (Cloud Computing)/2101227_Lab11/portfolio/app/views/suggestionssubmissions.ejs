@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecommendationSubmissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="my-contact-form-submissions">
+        <div class="container">
+            <h1 class="sub-title btnn">Recommendations </h1>
+            <div class="my-skills-list">
+                <% recommendations.forEach(submission=> { %>
+                    <div>
+                        <h3><strong>Skill:</strong>
+                            <%= submission.skills %>
+                        </h3>
+                        <h3>
+                            <p>
+                                <strong>Title:</strong>
+                                <%= submission.titles %>
+                            </p>
+                        </h3>
+                        <p>
+                            <strong>Message:</strong>
+                            <%= submission.message %>
+                        </p>
+                        <a href="/deleterecommendations/<%= submission.id %>">Delete</a>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

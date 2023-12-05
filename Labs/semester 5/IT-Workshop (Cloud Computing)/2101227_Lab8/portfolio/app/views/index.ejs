@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb3b7f1b54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <a href="#" class="logo">Vishal</a>
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#my-skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#porfolio">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <!-- <li>
+                    <a href="/viewsubmissions">Messages</a>
+                </li> -->
+                <li>
+                    <a href="/recommend">Recommendation</a>
+                </li>
+                <!-- <li>
+                    <a href="\recommends">suggestionssubmissions</a>
+                </li> -->
+                <!-- <li>
+                    <a href="\Login">Login</a>
+                </li>
+                <li>
+                    <a href="\Signup">Signup</a>
+                </li> -->
+                <li>
+                    <a href="\rate">Rate-Portfolio</a>
+                </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <!-- <p>Software Developer</p> -->
+                <p>Learner</p>
+                <h1>Hi, I'm <span>Vishal</span> <br>Kumar Prajapati </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title btnn">About Me</h1>
+            <div class="row">
+                <div class="about-col-1 image-container">
+                    <img src="/image/dpp.png" alt="#">
+                </div>
+                <div class="about-col-2">
+                    <p>I am a passionate and dedicated B.Tech student pursuing Computer Science and Engineering at IIIT Guwahati. Since
+                    November 2021, I have been actively engaged in learning and exploring various aspects of the field. With a current CGPA
+                    of 8.13, I strive for academic excellence while balancing my practical skills.
+                    <br><br>
+                    Prior to my undergraduate studies, I completed my 12th grade in PCM (CBSE) at Divine Sainik School, Varanasi, where I
+                    achieved an impressive grade of 94.4%. During my schooling years, I developed a strong foundation in mathematics,
+                    physics, and computer science, which ignited my interest in pursuing a career in technology.
+                    <br><br>
+                    In addition, my 10th grade education at Divine Sainik School, Varanasi, helped shape my overall academic profile. I
+                    secured a commendable grade of 90.6% during this period.
+                    <br><br>
+                    Overall, I am a motivated learner with a deep passion for computer science, aiming to make a positive impact in the
+                    field through continuous growth, innovation, and hard work. I am excited about the opportunities that lie ahead and look
+                    forward to contributing my skills and knowledge to the ever-evolving world of technology.
+                    </p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links " onclick="opentab('Skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('Experience')">Experience</p> -->
+    
+                    </div>
+                   
+                    <!-- <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>
+                                <span></span><br>
+                            </li>
+                        </ul>
+                    </div> -->
+    
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li>
+                                <span>B.TECH CSE (2021 - 2025)</span><br> Indian Institute Of Information Technology,<br>Guwahati Assam <br> Grade : 8.13 (till 4th semester)
+                            </li>
+                            <li>
+                                <span>INTERMEDIATE (2020)</span><br>Divine Sainik School,Lahartara Varanasi <br>Grade : 94.4%
+                            </li>
+                            <li>
+                                <span>HIGH SCHOOL (2018)</span><br>Divine Sainik School, Lahartara Varanasi <br>Grade : 90.6%
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Skills">
+                        <ul>
+                            <li>
+                                <span>Programming Language</span><br>C/C++, Java,Python
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>HTML, CSS, Bootstrap, Javascript, Nodejs
+                            </li>
+                            <li>
+                                <span>DBMS</span><br>MySql, MongoDB
+                            </li>
+                            <li>
+                                <span>Miscellaneous</span><br> Numpy, Pygame, Tkinter
+                            </li>
+                            <li>
+                                <span>Familiar</span> <br>Pandas, Sping and Spring Boot, Sping JDBC,JPA,Hibernate<br>
+                            </li>
+                            <li>
+                                <span>Tools</span><br> Git-Github, VS Code
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="/image/Vishal_Kumar_Prajapati.pdf" download class="btn btn2">Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="my-skills">
+        <div class="container">
+            <h1 class="sub-title btnn">Skills</h1>
+            <div class="my-skills-list">
+                <div>
+                    <img src="/image/monitor.png" alt="#">
+                    <h2>Programming </h2>
+                    <!-- <p>I have learned and gained proficiency in C/C++, Java, and Python programming languages, 
+                        equipping me with a diverse
+                    skill set for software development and problem-solving.</p> -->
+                    <p>
+                        I am proficient in C/C++, Java, and Python programming languages. With these skills, I can develop software,
+                        implement
+                        algorithms, and solve problems effectively. My expertise in these languages allows me to create robust and efficient
+                        solutions, contributing to successful projects and demonstrating versatility in programming.
+                    </p>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
+                </div>
+                <div>
+                    <img src="/image/data-structure.png" alt="">
+
+                    <h2>DSA</h2>
+                    <p>I have a strong understanding of data structures and algorithms, which are fundamental in software development. I can
+                    efficiently implement algorithms, optimize code, and solve complex problems. My knowledge in this area enables me to
+                    design efficient and scalable solutions for various programming tasks.</p>
+                    
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
+                </div>
+
+                <div>
+                    <img src="/image/java.png" alt="#">
+                    <h2>OOPs (Java)</h2>
+                    <p>I have a strong grasp of object-oriented programming (OOP) principles. With OOP, I can design modular, reusable, and
+                    maintainable code. I leverage concepts like encapsulation, inheritance, and polymorphism to create robust software
+                    solutions that are scalable, efficient, and adaptable to changing requirements.</p>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
+                </div>
+
+                <div>
+                    <img src="/image/database.png" alt="#">
+                    <h2>DBMS</h2>
+                    <p>I have acquired proficiency in MySQL, a widely-used database management system. With MySQL, I can efficiently design and
+                    manage relational databases, perform data retrieval and manipulation operations, and optimize query performance. My
+                    expertise in MySQL allows me to build robust and scalable database solutions for various applications.</p>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
+                </div>
+
+                <div>
+                    <img src="image/html.png" alt="#about">
+                    <h2>Web Developement</h2>
+                    <p>I have gained expertise in web development technologies such as HTML, CSS, JavaScript, Bootstrap, and Node.js. With
+                    these skills, I can design and build responsive and interactive websites, implement front-end designs, handle back-end
+                    functionalities, and create dynamic web applications. My proficiency in these technologies enables me to deliver
+                    engaging and user-friendly web experiences.</p>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
+                </div>
+    
+                <div>
+                    <img src="/image/machine-learning.png" alt="">
+                    <h2>Machine Learning</h2>
+                    <p>I have gained proficiency in supervised machine learning techniques. With this expertise, I can train models using
+                    labeled data, implement algorithms such as linear regression, decision trees, and support vector machines, evaluate
+                    model performance, and make accurate predictions. My knowledge of supervised machine learning enables me to develop
+                    effective predictive models for various applications.</p>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+<div id="course-work">
+    <div class="timeline">
+        <h1 class="sub-title heading btnn">
+            CourseWork
+        </h1>
+        <div class="course-list">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Semester 1</h1>
+                    <p class="card-detail">
+                        In my first semester, I successfully completed a diverse set of courses, including Mathematics, Computer Programming,
+                        Digital Design, Electrical Circuit Analysis, and English. I also participated in an Induction Program, which provided me
+                        with a comprehensive introduction to the college environment, fostering personal growth and preparing me for the
+                        academic journey ahead
+                    </p>
+                        <a href="https://github.com/vishal2537/College/tree/main/Labs/semester%201">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Semester 2</h1>
+                    <p class="card-detail">In my second semester, I successfully completed a range of courses, including Mathematics II, Data Structures, Computer
+                    Organization and Architecture, Basic Electronic Circuits, and Economics. Through these courses, I gained a strong
+                    understanding of advanced mathematical concepts, data structures, computer organization, electronic circuits, and
+                    economic principles, expanding my knowledge in these essential subjects.</p>
+                        <a href="https://github.com/vishal2537/College/tree/main/Labs/semester%202">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Semester 3</h1>
+                    <p class="card-detail">During my third semester, I undertook diverse courses such as Mathematics III, Discrete Mathematics, Algorithms, IT
+                    Workshop I (OOPs), Physics I, and Economics. These courses deepened my understanding of advanced mathematical concepts,
+                    algorithm design and analysis, object-oriented programming, physics principles, and economic theories, broadening my
+                    knowledge across various disciplines.</p>
+                        <a href="https://github.com/vishal2537/College/tree/main/Labs/semester%203">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Semester 4</h1>
+                    <p class="card-detail">In my fourth semester, I completed a range of courses including Operating Systems, Artificial Intelligence, Database
+                    Management System, Chemistry, and Macroeconomics. These courses equipped me with knowledge in areas such as OS
+                    principles, AI techniques, database management, chemical principles, and macroeconomic theories, enhancing my
+                    understanding of these subjects and their practical applications.</p>
+                        <a href="https://github.com/vishal2537/College/tree/main/Labs/semester%204">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title btnn">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/image/pr2.png" alt="#">
+                    <div class="layer">
+                        <h3>
+                            Real Estate Management System Website
+                        </h3>
+                        <p>Upside Avenue does an incredible job of connecting buyers and sellers through agents. We provide a full stack service
+                        for all real estate needs. A platform for sellers to post about their properties which buyers can find and contact
+                        sellers with an agent in mediation.</p>
+                        <a href="https://github.com/vishal2537/upsideavenue"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/image/pr1.png" alt="#">
+                    <div class="layer">
+                        <h3>
+                            My-Portfolio Website
+                        </h3>
+                       <p>
+                        I have developed my portfolio website using HTML, CSS, and JavaScript, ensuring responsiveness with media queries.
+                        Through this project, I showcased my skills in front-end web development, creating a visually appealing and
+                        user-friendly website that adapts to different devices and screen sizes for an enhanced user experience.
+                       </p>
+                        <a href="https://github.com/vishal2537/My-Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="image/pr3.png" alt="#">
+                    <div class="layer">
+                        <h3>
+                            Amazon Clone
+                        </h3>
+                        <p>
+                            Amazone-cle
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="https://github.com/vishal2537" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="sub-title btnn">Contact Me</div>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i>vishal.prajapati21b@iiitg.ac.in</p>
+                    <p><i class="fa-solid fa-envelope"></i>kumarvishal2537@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>8887845035</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100004815523941 "><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/VishalK62549726"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/_vishal._.prajapati_?igshid=ZDc4ODBmNjlmNQ== "><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vishal-kumar-prajapati-637204227 "><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/vishal2537"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/qr/HD44TCJ4SYW6G1 "><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name = "submit-to-google-sheet" action="/submit" method="post">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        
+                        <textarea id="message" name="message" rows="6" placeholder="Your Meassage"></textarea>
+                        <button type="submit"  class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msge"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 V.K. Co. Ltd.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

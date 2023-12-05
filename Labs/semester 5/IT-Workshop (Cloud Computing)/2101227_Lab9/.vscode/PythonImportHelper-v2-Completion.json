@@ -1,0 +1,146 @@
+[
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "punctuation",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "punctuation",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "punctuation",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "find_candidate",
+        "kind": 2,
+        "importPath": "Q3.mapper",
+        "description": "Q3.mapper",
+        "peekOfCode": "def find_candidate(point: numpy.ndarray):\n    distance1 = numpy.dot(point.T, candidate_points[\"iris_sertosa\"])\n    distance2 = numpy.dot(point.T, candidate_points[\"iris_versicolor\"])\n    distance3 = numpy.dot(point.T, candidate_points[\"iris_virginica\"])\n    min_distance = min(distance1, distance2, distance3)\n    if distance1 == min_distance:\n        return \"iris_sertosa\"\n    elif distance2 == min_distance:\n        return \"iris_versicolor\"\n    elif distance3 == min_distance:",
+        "detail": "Q3.mapper",
+        "documentation": {}
+    },
+    {
+        "label": "candidate_points",
+        "kind": 5,
+        "importPath": "Q3.mapper",
+        "description": "Q3.mapper",
+        "peekOfCode": "candidate_points = {\n    \"iris_sertosa\": numpy.array([5.8, 8.0, 1.2, 0.2]),\n    \"iris_versicolor\": numpy.array([6.1, 2.8, 4.0, 1.3]),\n    \"iris_virginica\": numpy.array([6.3, 2.7, 4.9, 1.8]),\n}\ndef find_candidate(point: numpy.ndarray):\n    distance1 = numpy.dot(point.T, candidate_points[\"iris_sertosa\"])\n    distance2 = numpy.dot(point.T, candidate_points[\"iris_versicolor\"])\n    distance3 = numpy.dot(point.T, candidate_points[\"iris_virginica\"])\n    min_distance = min(distance1, distance2, distance3)",
+        "detail": "Q3.mapper",
+        "documentation": {}
+    },
+    {
+        "label": "all_species",
+        "kind": 5,
+        "importPath": "Q3.reducer",
+        "description": "Q3.reducer",
+        "peekOfCode": "all_species = [\"iris_sertosa\", \"iris_versicolor\", \"iris_virginica\"]\ncounts = {\n    \"iris_sertosa\": 0,\n    \"iris_versicolor\": 0,\n    \"iris_virginica\": 0,\n}\nsums = {\n    \"iris_sertosa\": numpy.array([0.0] * 4),\n    \"iris_versicolor\": numpy.array([0.0] * 4),\n    \"iris_virginica\": numpy.array([0.0] * 4),",
+        "detail": "Q3.reducer",
+        "documentation": {}
+    },
+    {
+        "label": "counts",
+        "kind": 5,
+        "importPath": "Q3.reducer",
+        "description": "Q3.reducer",
+        "peekOfCode": "counts = {\n    \"iris_sertosa\": 0,\n    \"iris_versicolor\": 0,\n    \"iris_virginica\": 0,\n}\nsums = {\n    \"iris_sertosa\": numpy.array([0.0] * 4),\n    \"iris_versicolor\": numpy.array([0.0] * 4),\n    \"iris_virginica\": numpy.array([0.0] * 4),\n}",
+        "detail": "Q3.reducer",
+        "documentation": {}
+    },
+    {
+        "label": "sums",
+        "kind": 5,
+        "importPath": "Q3.reducer",
+        "description": "Q3.reducer",
+        "peekOfCode": "sums = {\n    \"iris_sertosa\": numpy.array([0.0] * 4),\n    \"iris_versicolor\": numpy.array([0.0] * 4),\n    \"iris_virginica\": numpy.array([0.0] * 4),\n}\nfor line in sys.stdin:\n    species, point = line.strip().split(\"\\t\")\n    point = numpy.array(list(map(float, point.strip().split(\",\"))))\n    counts[species] += 1\n    sums[species] += point",
+        "detail": "Q3.reducer",
+        "documentation": {}
+    },
+    {
+        "label": "candidate_points",
+        "kind": 5,
+        "importPath": "Q3.reducer",
+        "description": "Q3.reducer",
+        "peekOfCode": "candidate_points = {\n    \"iris_sertosa\": numpy.array([5.8, 8.0, 1.2, 0.2]),\n    \"iris_versicolor\": numpy.array([6.1, 2.8, 4.0, 1.3]),\n    \"iris_virginica\": numpy.array([6.3, 2.7, 4.9, 1.8]),\n}\nfor species in all_species:\n    if counts[species] != 0:\n        candidate_points[species] = sums[species] / counts[species]\npprint(candidate_points)",
+        "detail": "Q3.reducer",
+        "documentation": {}
+    }
+]

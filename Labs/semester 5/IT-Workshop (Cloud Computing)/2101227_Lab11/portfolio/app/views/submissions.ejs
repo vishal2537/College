@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactFormSubmissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="my-contact-form-submissions">
+        <div class="container">
+            <h1 class="sub-title btnn">Messages</h1>
+            <div class="my-skills-list">
+                <% submissions.forEach(submission=> { %>
+                <div>
+                    <h3><strong>Name:</strong>
+                    <%= submission.name %> </h3>
+                    <h3>
+                        <p>
+                            <strong>Email:</strong>
+                            <%= submission.email %>
+                        </p>
+                    </h3>
+                    <p>
+                        <strong>Message:</strong>
+                        <%= submission.message %>
+                    </p>
+                    <a href="/deletesubmission/<%= submission.id %>">Delete</a>
+                </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
